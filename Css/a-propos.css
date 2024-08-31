@@ -1,0 +1,320 @@
+        /* Votre CSS personnalisé ici */
+        body {
+            font-family:Calibri;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-weight: 200;
+            padding-top: 40px;
+            overflow-x: hidden;
+        }
+        /*---------Style pour le navbar--------*/
+        nav{
+          align-items:center;
+          background-color:rgb(107, 123, 138);
+          /*background-image: linear-gradient(90deg, #15538d  0% , #0c3557 35%, dodgerblue 140%);*/
+          box-shadow:0px 1px 1px rgba(0, 0, 0, 0.5);
+          color:#ffffff;
+          display:flex;
+          flex-direction:row;
+          flex-shrink: 0;
+          font-family: Calibri;
+          height:42px;
+          justify-content: space-between;
+          left:0;
+          position:fixed;
+          padding: 4px;
+          right:0;
+          top:0;
+          width:inherit; 
+          z-index:5;
+        }
+        nav *{
+          margin: 0;
+          padding:0;
+        }
+        /*Les codes de la section de dgauche de la barre de Navigation débutent ici*/
+        .navbar-left-section{
+          align-items:center;
+          display:flex;
+          flex-direction:row;
+          max-width: 110px;
+          width:100px;
+        }
+        .navbar-left-section img{
+          height:50px;
+          opacity: 1;
+          width:50px;
+          margin-left: 5px;
+        }
+        /*Les codes de la section du milieu de la barre de Navigation débutent ici*/
+        .navbar-middle-section{
+          display:flex;
+          flex-direction: row;
+          flex-shrink: 0;
+          font-size:14px;
+          gap: 20px;
+          list-style:none;
+          margin-inline: 20px;
+          text-align:center;
+          justify-content: center;
+          align-items: center;
+          min-width: 70px;
+          width:40%;
+        }
+        .navbar-middle-section li a span{
+          font-size: 16.5px;
+          margin-left: 40px;
+          font-weight: 100;
+          text-shadow: none;
+          color: rgb(255, 255, 255);
+        }
+        .navbar-middle-section li a span:hover{
+          margin-left: 7px;
+          color: rgb(0, 255, 179);
+          transition: margin-left 2s, color 0.3s ease;
+        }
+        .navbar-middle-section li a{
+          color: #ffffff;
+          cursor: pointer;
+          text-decoration: none;
+          text-shadow:0px 4px 4px rgba(77, 77, 77, 0.3),
+                      0px -1px 4px rgba(77, 77, 77, 0.3);
+        }
+        .navbar-middle-section li a:hover{
+          color:gold;
+          transition:all 0.55s;
+        }
+        
+        /*------Les codes de la 3ème section de la barre de Navigationi-----*/
+.navbar-third-section{
+  display:flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size:14px;
+  gap: 10px;
+  list-style:none;
+  margin-inline: 5px;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  min-width: 70px;
+}
+.navbar-third-section input{
+  height:30px;
+  width: 250px;
+  border:1px groove rgb(194, 194, 194);
+  border-radius:15px;
+  padding: 8px;
+  outline:none;
+}
+.navbar-third-section li a{
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-third-section li button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 3px;
+  border:1px groove rgb(194, 194, 194);
+  outline: none;
+}
+.navbar-third-section li button img{
+  width: 25px;
+  height: 25px;
+}
+.navbar-third-section li a span{
+  margin: 0;
+}
+.navbar-third-section li a img{
+  width: 32px;
+  height: 32px;
+}
+
+        /*Les codes de la section de droite de la barre de Navigation débutent ici*/
+        .navbar-right-section{
+          align-items:center;
+          display:flex;
+          flex-direction:row;
+          flex-shrink: 0;
+          margin-inline: 0px;
+          width:8%;
+        }
+        .navbar-right-section a{
+          text-decoration: none;
+          color: #ffffff;
+        }
+        .navbar-right-section button{
+          background-color: rgb(0, 73, 92);
+          border: none;
+          color:rgba(255, 255, 255, 0.938);
+          cursor:pointer;
+          font-size:11px;
+          min-width:80px;
+          padding:10px;
+          width:1fr;
+        }
+        .navbar-right-section button:hover{
+          background-color:rgb(0, 96, 121);
+          transition:all 0.45s;
+        }
+        /*------fin des codes pour le script----------*/
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .container div:first-child{
+        padding: 50px;
+          text-align:justify;
+        }
+       
+        .container h1{
+          color:#0c7691;
+          text-decoration:underline;
+          text-underline-position:from-font;
+          
+        }
+
+          .section1{
+            margin-left:70px;
+            width:90%;
+          }
+          .section1 h1{
+            color:#0c7691;
+          }
+          .section1 p{
+            color:#5c5c5c;
+            line-height:1.8;
+            font-size: 18px;
+          }
+          .section1 h1[class="smooth-typewriter"]{
+            font-size:57px;
+            font-weight:bold;
+            color: #d8cc00;
+            margin-block: 10px;
+            text-decoration:underline;
+            text-underline-position:from-font;
+            
+          }
+          .section1 div{
+            margin-bottom:200px;
+            /* margin-right:10px; */
+            text-align:justify;
+            font-size:18px;
+            display: flex;
+          }
+
+          .section-points-cardinaux{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            background-color: lightslategray;
+            color: rgb(228, 228, 228);
+            padding-inline:0px ;
+            font-size: medium;
+            width: 100%;
+          }
+          .section-points-cardinaux h2{
+            color: gold;
+            font-size: medium;
+          }
+          .section1 div[class='typewriters']{
+            /* display: flex; */
+            flex-direction: column;
+            height: 620px;
+            color:#5c5c5c;
+          }
+          .section1 div blockquote{
+            text-decoration:underline;
+            color:#acacac;
+            text-underline-position:from-font;
+          }
+           p[class='typewriter']{
+              display: flex;
+              color: #5c5c5c;
+              flex-direction: column;
+              line-height:1.8;
+              font-size: 18px;
+              width: 900px;
+              height: 190px;
+          }
+          span{
+            margin-bottom: 10px;
+          }
+
+          .description span a,
+          .section1 p a,
+          .section1 span a{
+            color:#1c88c7;
+            text-underline-position:from-font;
+          }
+          /*about-me-prophet--*/
+          #about-me-prophet{
+            background-color: #ced6cf;
+            display: flex;
+            gap: 30px;
+            color: #5c5c5c;
+            font-size: 18px;
+            line-height:1.5;
+            padding: 15px 45px;
+            text-align:center;
+          }
+          #about-me-prophet img{
+            border-radius: 50%;
+            background-color: #e0e0e0;
+          }
+          .words-of-prophet,
+          .visual-of-prophet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+          }
+
+          .visual-of-prophet h2,
+          .visual-of-prophet p{
+            margin-block: 0;
+          }
+          .words-of-prophet h1{
+            margin-block:0 ;
+          }
+          section{
+            background-color: #5c5c5c;
+            mix-blend-mode: multiply;
+            width: 1200px;
+            height:450px;
+            margin-top:60px;
+            margin-left: 70px;
+            overflow: hidden;
+          }
+            .image {
+              width: 1200px;
+              height: 100%;
+              background-image: url('../thumbnails/ImagesPrincipales/Célébration\ commune.jpg');
+              background-repeat: no-repeat;
+              background-position:center;
+              background-size: cover;
+              cursor:pointer;
+              overflow: hidden;
+              opacity: 0.7;
+              transition:transform 0.55s ease-in-out;
+              transform: scale(1);
+              will-change: transform;
+            }
+
+            .image:hover{
+              /* background-image: url('../thumbnails/ImagesPrincipales/Applaudissons\ Dieu.jpeg'); */
+              transform: scale(1.2);
+              opacity:0.9;
+            }

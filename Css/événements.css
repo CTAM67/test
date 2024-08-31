@@ -1,0 +1,75 @@
+
+main{
+  padding-inline: 120px;
+  padding-top: 15px;
+}
+.actuality-field{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:start;
+  border-left: 1px solid silver;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+/*-----Style pour les sections d'événements passés------*/
+.actuality-field:first-child{
+  border-left: 1.5px solid lightslategray;
+}
+.actuality-field:first-child h1{
+  background-color: lightslategray;
+}
+/*------Styles pour les dernières activités------*/
+.actuality-field:nth-child(2){
+  border-left: 1.5px solid orangered;
+}
+.actuality-field:nth-child(2) h1{
+  background-color: orangered;
+}
+/*-------Styles pour les événements antérieurs ou obsolètes------*/
+.actuality-field:last-child{
+  border-left: 1.5px solid tomato;
+}
+.actuality-field:last-child h1{
+  background-color: tomato;
+}
+
+h1{
+ color: white;
+ background-color: lightseagreen;
+ padding-inline: 10px;
+ width: 1013px;
+} 
+h4{
+  color: dodgerblue;
+  font-weight: bold;
+  margin-block:7px;
+  cursor: pointer;
+}
+
+.actuality-image{
+  background-color:silver;
+  cursor: pointer;
+   min-height: 240px;
+   max-height: 300px; 
+  width: 100%;
+  margin-top: 14px;
+}
+.actuality-description{
+  font-weight:550;
+  font-size:18px;
+  text-align: justify;
+}
+.actuality{
+  max-width: 320px;
+  min-width: 240px;
+  margin-bottom: 10px;
+}
+.actualities-visual{
+  display: flex;
+  align-items:start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1033px; 
+  gap: 3.5%;
+}

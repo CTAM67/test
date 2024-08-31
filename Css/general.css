@@ -1,0 +1,36 @@
+:root {
+	--background-color1-dark-general: linear-gradient(30deg, rgb(68, 151, 172) 0% , rgb(108, 192, 212) 35%, rgb(46, 101, 156) 140%);
+	--background-blue: rgb(68, 151, 172);
+	--background-dark-blue: #15538d;
+	--background-white-general: rgb(235,235,235);
+	--color-gold: #FFD700;
+	--background-white-dark-general: linear-gradient(7deg, #949494 0% , #5c5c5c 35%, rgb(255, 255, 255) 140%);
+	--background-color1-general: linear-gradient(7deg, #15538d 0% , #0c3557 35%, dodgerblue 140%);
+	--background-color2-general: linear-gradient(30deg, rgb(170, 171, 172) 0% , rgb(212, 212, 212) 35%, rgb(156, 157, 158) 140%);
+	--background-color2-dark-general: linear-gradient(40deg, #949596 0% , #585858 35%, rgb(246, 251, 255) 140%);
+	--effect-waiting: rgb(151, 151, 151);
+	--blur-effect: rgba(48, 48, 48, 0.562);
+}
+html{
+	background: #fcfcfc;
+	height: auto;
+	padding-top: 50px;
+	color: #909090;
+	font-family: Calibri;
+	font-size: 16.5px;
+	overflow-x: hidden;
+}
+ *{
+	margin: 0;
+	padding: 0;
+	font-weight: 200;
+	user-select: text;
+	/* transition: all 0.4s ease; */
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

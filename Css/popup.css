@@ -1,0 +1,119 @@
+/* A partir d'ici, j'insère les styles relatifs au popup */
+.popup{
+  position:fixed;
+  left: 4px;
+  top:3px;
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.3);
+  height:480px;
+  width: 80px;
+  padding:12px 26px;
+  border-radius: 2px;
+  transform: translateX(-111%);
+  /* transform: scale(0); */ 
+  transition: transform 1.5s ease;
+  z-index:2000;
+}
+
+.open{
+  /* display: block; */
+  /* transform: scale(1.1); */
+}
+.popup.dynamique-openning{
+  /* animation: lefting 0.5s linear; */
+  transform: translateX(0%);
+}
+/* @keyframes lefting {
+  0%{
+    transform: translateX(-111%);
+  }
+  50%{
+    transform: translateX(-55.5%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+} */
+.popup-closing-btn{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 40px;
+  color: rgb(214, 214, 214);
+  top: 0px;
+  right: 0px;
+  height:24px;
+  cursor: pointer;
+  transition: all 0.55s ease;
+}
+.popup-closing-btn:hover{
+  color: rgb(253, 0, 0);
+}
+h2{
+  font-weight: 500;
+  color: rgb(6, 141, 141);
+  font-size: 16px;
+  text-align:left;
+  /* text-decoration: underline;
+  text-underline-position: from-font; */
+}
+#socials-network-ctn ul{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:start;
+  margin-top: 18px;
+}
+.socials-network-icon{
+  background-color: rgb(63, 63, 63);
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  margin-bottom:5px;
+}
+.socials-network-icon img{
+  opacity: 0.9;
+  object-fit: cover;
+  object-position: center;
+  height: inherit;
+  width: inherit;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+.socials-network-icon img:hover{
+ opacity: 1;
+}
+
+#socials-network-ctn ul li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content:space-between;
+}
+
+#socials-network-ctn ul li p{
+  font-size: 14px;
+  color: rgb(7, 93, 128);
+  margin-bottom: 15px;
+  margin-left: 0;
+  transition: margin-left 0.7s ease;
+}
+#socials-network-ctn ul li p:hover{
+  margin-left:20px;
+  text-decoration: underline;
+}
+
+.disable{
+  /* opacity: 0.5; */
+  visibility: hidden;
+  /* display: none; */
+}
+.opacity-reduction{
+  opacity: 0.5;
+}
+.opacity-returner{
+  opacity: 0.5;
+}
+/* Fin de code pour le popup */

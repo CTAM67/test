@@ -1,0 +1,264 @@
+:root {
+  --background-color1-general:  linear-gradient(30deg, rgb(68, 151, 172)  0% , rgb(108, 192, 212) 35%, rgb(46, 101, 156) 140%);
+  --background-color1-dark-general:linear-gradient(to left,  #5b768b 5%, rgb(43, 81, 119) 140%);
+  --background-white-general:#e9e9e9;
+  /*Theme gris*/
+  --background-color2-general:  linear-gradient(30deg, rgb(172, 68, 99)  0% , rgb(212, 108, 139) 35%, rgb(156, 46, 79) 140%);
+  --background-color2-dark-general:linear-gradient(90deg, #929292  0% , #858585 35%, rgb(228, 222, 224) 140%);
+  --box-shadow:0px 1px 15px rgba(0, 0, 0, 0.7);
+  --text-shadow:0px 1px 15px rgb(0, 0, 0);
+  --blueSky-darking:rgb(54,150,185);
+}
+
+nav{
+  align-items:center;
+  background:var(--background-white-general);
+  /*background-image: linear-gradient(90deg, #15538d  0% , #0c3557 35%, dodgerblue 140%);*/
+  box-shadow:0px 1px 1px rgba(0, 0, 0, 0.5);
+  color:#ffffff;
+  display:flex;
+  flex-direction:row;
+  flex-shrink: 0;
+  font-family: Calibri;
+  height:50px;
+  justify-content: space-between;
+  left:0;
+  position:fixed;
+  padding: 4px;
+  right:0;
+  top:0;
+  width:inherit; 
+  z-index:5;
+}
+nav *{
+  margin: 0;
+  padding:0;
+}
+/*Les codes de la section de dgauche de la barre de Navigation débutent ici*/
+.navbar-left-section{
+  align-items:center;
+  display:flex;
+  flex-direction:row;
+  max-width: 110px;
+  width:100px;
+}
+.navbar-left-section img{
+  height:50px;
+  opacity: 1;
+  width:50px;
+  margin-left: 5px;
+}
+/*Les codes de la section du milieu de la barre de Navigation débutent ici*/
+.navbar-middle-section{
+  display:flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size:14px;
+  gap: 20px;
+  list-style:none;
+  margin-inline: 20px;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  min-width: 70px;
+  width:40%;
+}
+.navbar-middle-section li a span{
+  font-size: 16.5px;
+  margin-left: 40px;
+  font-weight: 100;
+  text-shadow: none;
+  color:rgb(252, 77, 47);
+  transition: margin-left 2s, color 0.3s ease;
+}
+.navbar-middle-section li a span:hover{
+  margin-left: 7px;
+  color: rgb(255, 30, 0);
+}
+.navbar-middle-section li a{
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar-middle-section li a:hover{
+  color:rgb(10, 156, 240);
+  transition:all 0.55s;
+}
+
+/*------Les codes de la 3ème section de la barre de Navigationi-----*/
+.navbar-third-section{
+  display:flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size:14px;
+  gap: 10px;
+  list-style:none;
+  margin-inline: 5px;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  min-width:250px;
+}
+.navbar-third-section input{
+  height:30px;
+  width: 250px;
+  border:1px groove rgb(194, 194, 194);
+  border-radius:15px;
+  padding: 8px;
+  outline:none;
+}
+
+.navbar-third-section li a{
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-third-section li button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 3px;
+  border:1px groove rgb(194, 194, 194);
+  outline: none;
+}
+.navbar-third-section li button img{
+  width: 25px;
+  height: 25px;
+}
+.navbar-third-section li a img{
+  width: 32px;
+  height: 32px;
+}
+
+/*Les codes de la section de droite de la barre de Navigation débutent ici*/
+.navbar-right-section{
+  align-items:center;
+  display:flex;
+  flex-direction:row;
+  flex-shrink: 0;
+  margin-inline:0px;
+  width:8%;
+}
+.navbar-right-section a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar-right-section button{
+  background-color: rgb(0, 73, 92);
+  border: none;
+  color:rgba(255, 255, 255, 0.938);
+  cursor:pointer;
+  font-size:11px;
+  min-width:80px;
+  padding:10px;
+  width:1fr;
+}
+.navbar-right-section button:hover{
+  background-color:rgb(0, 96, 121);
+  transition:all 0.45s;
+}
+
+html{
+  padding-top: 3.6rem;
+  overflow-y:hidden;
+  background-image: url('../thumbnails/jesus-7897344_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size:16.5px;
+  font-family: Calibri;
+  user-select: none;
+}
+html *{
+  margin: 0;
+  padding: 0;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: rgba(15, 15, 15, 0.7);
+  color:white;
+  margin: 2% 19%;
+  padding-block:6%;
+  border-radius: 5px;
+  /* width:;
+  height:; */
+}
+
+a{
+  color: dodgerblue;
+}
+a:hover{
+  color: rgb(110, 183, 255);
+  transition: 0.4s ease-in-out;
+}
+.demande-inscription ,
+.interaction-client {
+  display: flex;
+  align-items: center;
+  justify-content:start;
+}
+.demande-inscription p{
+margin-right: 7px;
+}
+.interaction-client label{
+  margin-right:150px;
+  margin-left: 7px;
+}
+.titre-du-formulaire p{
+font-size: 45px;
+}
+
+.contact,
+.clé-de-sécurité{
+  position: relative;
+}
+ input[type='email'], 
+ input[type='password']{
+  color: rgb(209, 209, 209);
+  outline:none;
+  border: none;
+  background-color: #ffffff49;
+  padding-block:15px;
+  padding-left: 55px;
+  height: 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  width:450px;
+}
+form img{
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 7px;
+  bottom: 7px;
+}
+input[type='submit'] {
+  color: #414141;
+  outline:none;
+  border: none;
+  background-color: rgb(187, 187, 187);
+  height: 45px;
+  border-radius: 30px;
+  width:490px;
+  font-size: 15px;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: #e0e0e0;
+  color: #000000;
+  font-weight: 400;
+  transition: 0.4s ease-in-out;
+}
+ input[type="email"]::placeholder,
+ input[type="password"]::placeholder{
+  font-size: 16px;
+  color: rgb(214, 214, 214);
+}
